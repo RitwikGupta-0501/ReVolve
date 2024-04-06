@@ -50,11 +50,11 @@ const ContextProvider = (props) => {
         let inputToSendG;
         if (prompt !== undefined) {
             // If prompt is provided, use it with prefix
-            inputToSendG = "i am sending you a text after a colon. mention the name(exact alphanumeric value as mentioned in the text or received data, the grade should not be changed) of the material grade (which is the composition of which it is made of like for steel it can be AISI 1018). i dont want the product descriptions or dimensions to be shown : " + prompt;
+            inputToSendG = "i am sending you a text after a colon. mention the name(exact alphanumeric value as mentioned in the text or received data, the grade should not be changed) of the material grade (which is the composition of which it is made of like for steel it can be AISI 1018 or AISI 304, Aluminum can be AA1100 or AA6061, copper can be C1100 or C17000, plastics can be HDPE or PVC or ABS, wood can be softwood or hardwood, concrete can be portland cement or aggregates, ceramics can be alumina or zirconia. i dont want the product descriptions or dimensions to be shown : " + prompt;
             setRecentPrompt(prompt);
         } else {
             // If prompt is not provided, use user input with prefix
-            inputToSendG = "i am sending you a text after a colon. mention the name(exact alphanumeric value as mentioned in the text or received data, the grade should not be changed) of the material grade (which is the composition of which it is made of like for steel it can be AISI 1018). i dont want the product descriptions or dimensions to be shown : " + input;
+            inputToSendG = "i am sending you a text after a colon. mention the name(exact alphanumeric value as mentioned in the text or received data, the grade should not be changed) of the material grade (which is the composition of which it is made of like for steel it can be AISI 1018 or AISI 304, Aluminum can be AA1100 or AA6061, copper can be C1100 or C17000, plastics can be HDPE or PVC or ABS, wood can be softwood or hardwood, concrete can be portland cement or aggregates, ceramics can be alumina or zirconia. i dont want the product descriptions or dimensions to be shown : " + input;
             setPrevPrompts(prev => [...prev, input]);
             setRecentPrompt(input);
         }
