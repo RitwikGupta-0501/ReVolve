@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'chat_bot',
 ]
 
-LOGIN_URL = "/admin/login/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
