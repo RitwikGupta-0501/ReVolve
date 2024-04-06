@@ -8,10 +8,10 @@ const App = () => {
 
   return (
     <>
-     // <Sidebar/>
-    //  <Main/>  
+     <Sidebar/>
+     <Main/>  
       
-        <MyComponent/> 
+        {/* <MyComponent/>  */}
     </>
   )
 }
