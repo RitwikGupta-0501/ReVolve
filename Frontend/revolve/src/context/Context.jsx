@@ -91,15 +91,15 @@ const ContextProvider = (props) => {
         console.log(res);
         console.log(res.data);
       })
-    //   let fres;
-    //   axios.post('/api/get_objects/') 
-    //   .then(res => {
-    //     let len = res.length;
+      let fres;
+      axios.post('/api/get_objects/') 
+      .then(res => {
+        let len = res.length;
         
-    //   })
-    //   .catch(error => {
-    //     console.error('Error fetching objects:', error);
-    //   });
+      })
+      .catch(error => {
+        console.error('Error fetching objects:', error);
+      });
     
 
 
