@@ -3,5 +3,4 @@ from .models import *
 # Register your models here.
 admin.site.register(seller)
 admin.site.register(sellerID)
-admin.site.register(Product)
 
