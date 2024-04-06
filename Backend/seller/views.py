@@ -4,15 +4,21 @@ from . models import *
 
 # Create your views here.
 def getReactView(request):
-   product_Name = request.POST.get("product_name")
-   product_Type = request.POST.get("product_type")
+   product_Name = request.POST.get("material")
+   product_Type = request.POST.get("grade")
 
-   selected_products = Product.objects.get(product_name=product_Name)
-   selected_sellers =  seller.objects.get(seller_id=selected_products.seller)
+   sellers = seller.objects.filter(product_name__icontains=product_Name) & seller.objects.filter(product_name__icontains=product_Type)
 
-   response_data = {'seller_id' : selected_sellers.seller_id,
-                    'seller_name' : selected_sellers.seller_name,
-                    'prod_desc' : selected_products.product_description }
+   response_data = [] 
 
+   i=1
+   for obj in sellers:
+      data = {}
+      data['id'] = i
+      data['seller_name'] = obj.seller_name
+      data['seller_rating'] = obj.seller_rating
+      data['prod_desc'] = obj.product_description
+      response_data += [data,]
+      i += 1
 
    return JsonResponse(response_data)
