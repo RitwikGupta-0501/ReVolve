@@ -40,6 +40,9 @@ INSTALLED_APPS = [
 
     # OWN
     'chat_bot',
+    'buyer',
+    'seller',
+    'partner',
 ]
 
 
