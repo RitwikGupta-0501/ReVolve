@@ -46,15 +46,10 @@ const Main = () => {
         ) : (
           <>
             <div className="greet">
-<<<<<<< Updated upstream
-              <p><span>Hello 👋</span></p>
-              <p>What would you like to buy?</p>
-=======
               <p>
                 <span>Hello, User</span>
               </p>
               <p>How can I help you today?</p>
->>>>>>> Stashed changes
             </div>
             {/* <div className="cards">
               <div className="card">
@@ -88,10 +83,6 @@ const Main = () => {
             <div>
               {/* <img src={assets.gallery_icon} width={30} alt="" />
               <img src={assets.mic_icon} width={30} alt="" /> */}
-<<<<<<< Updated upstream
-              {/* {input ? <img onClick={() => onSent()} src={assets.send_icon} width={30} alt="" /> : null} */}
-              {input ? <img onClick={() => onSent()} src={assets.send_icon} width={30} alt="" /> : null}
-=======
               {input ? (
                 <img
                   onClick={() => {
@@ -104,7 +95,6 @@ const Main = () => {
                   // onKeyDown={myFunc}
                 />
               ) : null}
->>>>>>> Stashed changes
             </div>
           </div>
           <p className="bottom-info"> </p>
