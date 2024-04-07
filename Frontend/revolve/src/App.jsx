@@ -27,13 +27,6 @@ const App = () => {
   ];
   return (
     <>
-<<<<<<< Updated upstream
-=======
-      <Sidebar />
-      <Main />
-
-      {/* <MyComponent/>  */}
->>>>>>> Stashed changes
       <Sidebar />
       <Main />
       <Box store={info} />
