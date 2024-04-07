@@ -1,15 +1,8 @@
-<<<<<<< Updated upstream
-// import React, { useState } from 'react'
-import Sidebar from './components/Sidebar/Sidebar'
-import Main from './components/Main/Main'
-// import MyComponent from './components/sendPrompt'
-=======
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Main from "./components/Main/Main";
 import Box from "./components/box";
 // import MyComponent from "./components/sendPrompt";
->>>>>>> Stashed changes
 
 const App = () => {
   const info = [
@@ -34,17 +27,10 @@ const App = () => {
   ];
   return (
     <>
-<<<<<<< Updated upstream
-     <Sidebar/>
-     <Main/>  
-      
-        {/* <MyComponent/>  */}
-=======
       <Sidebar />
       <Main />
       <Box store={info} />
       {/* <MyComponent /> */}
->>>>>>> Stashed changes
     </>
   );
 };
