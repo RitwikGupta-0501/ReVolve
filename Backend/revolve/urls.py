@@ -16,13 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from chat_bot.views import *
-from seller.views import *
-from partner.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path("", chat, name="chat"),
-    # path("ask_question/", ask_question, name="ask_question"),
-    path("sendingdata/",getReactView,name="sendingdata"),
+    path("sellerdata/",include('seller.urls')),
+    path("partnerdata/",include('partner.urls')),
+    
 ]

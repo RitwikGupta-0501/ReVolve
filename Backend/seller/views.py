@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from . models import *
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
 
 # Create your views here.
 def getReactView(request):
@@ -10,7 +13,6 @@ def getReactView(request):
    sellers = seller.objects.filter(product_name__icontains=product_Name) & seller.objects.filter(product_name__icontains=product_Type)
 
    response_data = [] 
-
    i=1
    for obj in sellers:
       data = {}
