@@ -47,9 +47,9 @@ const Main = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, User</span>
+                <span>Hello 👋</span>
               </p>
-              <p>How can I help you today?</p>
+              <p>What would you like to buy?</p>
             </div>
             {/* <div className="cards">
               <div className="card">
@@ -83,16 +83,13 @@ const Main = () => {
             <div>
               {/* <img src={assets.gallery_icon} width={30} alt="" />
               <img src={assets.mic_icon} width={30} alt="" /> */}
+              {/* {input ? <img onClick={() => onSent()} src={assets.send_icon} width={30} alt="" /> : null} */}
               {input ? (
                 <img
-                  onClick={() => {
-                    onSent();
-                    handleClick();
-                  }}
+                  onClick={() => onSent()}
                   src={assets.send_icon}
                   width={30}
                   alt=""
-                  // onKeyDown={myFunc}
                 />
               ) : null}
             </div>

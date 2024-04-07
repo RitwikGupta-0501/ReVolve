@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Main from "./components/Main/Main";
+import Main from "./components/Main/Main.jsx";
 import Box from "./components/box";
 // import MyComponent from "./components/sendPrompt";
 
@@ -27,6 +27,13 @@ const App = () => {
   ];
   return (
     <>
+<<<<<<< Updated upstream
+=======
+      <Sidebar />
+      <Main />
+
+      {/* <MyComponent/>  */}
+>>>>>>> Stashed changes
       <Sidebar />
       <Main />
       <Box store={info} />

@@ -1,10 +1,11 @@
 import { createContext, useState } from "react";
 import runChat from "../config/gemini";
-import axios from 'axios';
+import axios from "axios";
 
 export const Context = createContext();
 
 const ContextProvider = (props) => {
+  console.log(props);
   const [prevPrompts, setPrevPrompts] = useState([]);
   const [input, setInput] = useState("");
   const [recentPrompt, setRecentPrompt] = useState("");
